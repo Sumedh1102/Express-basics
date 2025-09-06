@@ -1,0 +1,18 @@
+{
+  "name": "basic-b",
+  "version": "1.0.0",
+  "description": "basic Backend app to deploy",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "node",
+    "basic"
+  ],
+  "author": "Sumedh Patil",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
