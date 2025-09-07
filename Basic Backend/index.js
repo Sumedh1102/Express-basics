@@ -1,13 +1,8 @@
-require('dotenv').config()
-
-// Importing the Express framework
 const express = require('express')
 
 // Creating an Express application
 const app = express()
-
-// Defining the port number where the server will run
-const port = 4000
+const port = 3000
 
 // Default route (Home page)
 // When user visits http://localhost:3000/
@@ -30,16 +25,6 @@ app.get('/login', (req, res) => {
   res.send('<h1>please login at the GDG Mumbai Google Dev Group Mumbai</h1>')
 })
 
-// YouTube route
-// When user visits http://localhost:3000/youtube
-// It will respond with a heading suggesting to visit GDG Mumbai’s YouTube page
-app.get('/youtube', (req, res) => {
-  res.send('<h2>Visit GDG Mumbai official YouTube page</h2>')
-})
-
-// Starting the server
-// app.listen() tells the app to listen on the defined port (3000)
-// Once the server starts, it will log a message in the console
-app.listen(process.env.PORT, () => {
+app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
